@@ -104,11 +104,30 @@ ul {
     color: var(--white);
     /* Add transition for hover effect (0.3s) */
     transition: color 0.3s ease;
+     /* TODO: Display as inline-block */
+    display: inline-block;
+    /* TODO: Add padding (12px 30px) */
+    padding: 8px 20px;
+    /* TODO: Set font-size (1rem) */
+    font-size: 1rem;
+    /* TODO: Remove border */
+    border: none;
+    /* TODO: Set border-radius (5px) */
+    border-radius: 5px;
+    /* TODO: Set cursor to pointer */
+    cursor: pointer;
+    /* TODO: Add transition (0.3s) */
+    transition: all 0.3s ease;
+    font-weight: bold;
+    background-color: goldenrod;
+    /* TODO: Set color to white */
+    color: green;
 }
 
 .nav-menu li a:hover {
     /* TODO: Change color on hover to accent gold */
-    color: silver;
+    color: red;
+    background-color: rgb(192, 146, 29);
 }
 
 /* ==================== HERO SECTION STYLES ==================== */
@@ -335,9 +354,9 @@ ul {
 
 .footer {
     /* TODO: Set background to primary blue */
-    background-color: var(--primary-blue);
+    background-color: green;
     /* TODO: Set color to white */
-    color: var(--white);
+    color: white;
     /* TODO: Add padding (3rem 0) */
     padding: 3rem 0;
     /* TODO: Add margin-top (2rem) */
@@ -358,7 +377,7 @@ ul {
 
 .footer-section h3 {
     /* TODO: Set color to accent gold */
-    color: var(--accent-gold);
+    color: red;
     /* TODO: Add margin-bottom (1rem) */
     margin-bottom: 1rem;
     /* TODO: Set font-size (1.2rem) */
@@ -374,19 +393,19 @@ ul {
 
 .footer-nav li {
     /* TODO: Add margin-bottom (0.5rem) */
-    
+    margin-bottom: 0.5rem;
 }
 
 .footer-nav a {
     /* TODO: Set color to white */
-    
+    color: white;
     /* TODO: Add transition (0.3s) */
-    
+    transition: color 0.3s ease;
 }
 
 .footer-nav a:hover {
     /* TODO: Change color on hover to accent gold */
-    
+    color: var(--accent-gold);
 }
 
 /* ==================== FOOTER COPYRIGHT & DISCLAIMER ==================== */
@@ -395,9 +414,10 @@ ul {
 .footer-copyright p,
 .footer-disclaimer p {
     /* TODO: Set font-size (0.9rem) */
-    
+    font-size: 0.9rem;
     /* TODO: Set line-height (1.6) */
-    
+    line-height: 1.6;
+    margin-bottom: 0.5;
 }
 
 /* ==================== FOOTER CONTACT FORM ==================== */
@@ -405,39 +425,40 @@ ul {
 
 .footer-contact form {
     /* TODO: Use Flexbox or Grid for layout */
-    
+    display: flex;
+    flex-direction: column;
 }
 
 .footer-contact label {
     /* TODO: Display as block */
-    
+    display: block;
     /* TODO: Add margin-bottom (0.5rem) */
-    
+    margin-bottom: 0.5rem;
     /* TODO: Make font-weight bold */
-    
+    font-weight: bold;
 }
 
 .footer-contact input,
 .footer-contact textarea {
     /* TODO: Set width to 100% */
-    
+    width: 100%;
     /* TODO: Add padding (10px) */
-    
+    padding: 10px;
     /* TODO: Add margin-bottom (1rem) */
-    
+    margin-bottom: 1rem;
     /* TODO: Set border (1px solid #ddd) */
-    
+    border: 1px solid #777;
     /* TODO: Set border-radius (5px) */
-    
+    border-radius: 5px;
     /* TODO: Set font-family to inherit */
-    
+    font-family: inherit;
 }
 
 .footer-contact textarea {
     /* TODO: Set min-height (100px) */
-    
+    min-height: 100px;
     /* TODO: Allow vertical resize only */
-    
+    resize: vertical;
 }
 
 /* ==================== MEDIA QUERIES ==================== */
@@ -452,12 +473,15 @@ ul {
     }
     
     /* TODO: Change footer grid to 2 columns */
-    .footer-grid {
+    .footer-grid { grid-template-columns: repeat(2, 1fr);
         
     }
     
     /* TODO: Adjust hero content font sizes if needed */
-    
+    .hero-content h1 {
+        font-size: 3.5rem;
+
+    }
 }
 
 /* ========== DESKTOP (1024px and up) ========== */
@@ -469,16 +493,19 @@ ul {
     }
     
     /* TODO: Change footer grid to 4 columns */
-    .footer-grid {
+    .footer-grid { grid-template-columns: repeat(2, 1fr);
         
     }
     
     /* TODO: Increase hero heading size */
     .hero-content h1 {
-        
+        font-size: 4rem;
     }
-    
+    .hero-content p {
+        font-size: 1.5rem;
+    }
 }
+
 
 /* ==================== NOTES FOR STUDENTS ==================== */
 /*
