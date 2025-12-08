@@ -176,3 +176,197 @@ ul {
     margin-left: auto;
     margin-right: auto;
 }
+
+/* ==================== BUTTON STYLES ==================== */
+/* TODO: Create reusable button styles */
+
+.btn {
+    /* TODO: Display as inline-block */
+    display: inline-block;
+    /* TODO: Add padding (12px 30px) */
+    padding: 12px 30px;
+    /* TODO: Set font-size (1rem) */
+    font-size: 1rem;
+    /* TODO: Remove border */
+    border: none;
+    /* TODO: Set border-radius (5px) */
+    border-radius: 5px;
+    /* TODO: Set cursor to pointer */
+    cursor: pointer;
+    /* TODO: Add transition (0.3s) */
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.btn-primary {
+    /* TODO: Set background to accent gold */
+    background-color: darkred;
+    /* TODO: Set color to primary blue */
+    color: green;
+    /* TODO: Make font-weight bold */
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    /* TODO: Darken background on hover */
+    background-color: red;
+    color: greenyellow;
+    /* TODO: Add transform: translateY(-2px) for lift effect */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3)
+}
+
+.btn-secondary {
+    /* TODO: Set background to secondary blue */
+    background-color: goldenrod;
+    /* TODO: Set color to white */
+    color: green;
+}
+
+.btn-secondary:hover {
+    /* TODO: Darken background on hover */
+    background-color: gold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* ==================== CARDS SECTION ==================== */
+/* TODO: Style the cards section container */
+
+.cards-section {
+    /* TODO: Add padding (4rem 0) */
+    padding: 4rem 0;
+    /* TODO: Set background color to light gray */
+    background-color: darkred;
+}
+
+.section-title {
+    /* TODO: Center text */
+    text-align: center;
+    /* TODO: Set font-size (2.5rem) */
+    font-size: 2.5rem;
+    /* TODO: Set color to primary blue */
+    color: silver;
+    /* TODO: Add margin-bottom (3rem) */
+    margin-bottom: 3rem;
+    font-weight: bold;
+}
+
+/* ==================== CARDS GRID ==================== */
+/* TODO: Create responsive grid using CSS Grid */
+/* Requirements:
+   - 1 column on mobile
+   - 2 columns on tablet (768px+)
+   - 3 columns on desktop (1024px+) */
+
+.cards-grid {
+    /* TODO: Use CSS Grid */
+    display: grid;
+    
+    /* TODO: Start with 1 column for mobile */
+    grid-template-columns: 1fr;
+    
+    /* TODO: Add gap between cards (2rem) */
+    gap: 2rem;
+}
+
+/* ==================== INDIVIDUAL CARD STYLES ==================== */
+/* TODO: Style each card */
+
+.card {
+    /* TODO: Set background to white */
+    background-color: silver;
+    /* TODO: Add border-radius (10px) */
+    border-radius: 10px;
+    /* TODO: Add box-shadow for depth */
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    /* TODO: Add overflow: hidden */
+    overflow: hidden;
+    /* TODO: Add transition (0.3s) */
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    /* TODO: Lift card on hover with transform */
+    transform: translateY(-10px);
+    
+    /* TODO: Increase shadow on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    /* TODO: Make image full width */
+    width: 100%;
+    /* TODO: Set height (250px) */
+    height: 250px;
+    /* TODO: Use object-fit: cover */
+    object-fit: cover;
+}
+
+.card-content {
+    /* TODO: Add padding (1.5rem) */
+    padding: 1.5rem;
+}
+
+.card-content h3 {
+    /* TODO: Set color to primary blue */
+    color: green;
+    /* TODO: Set font-size (1.5rem) */
+    font-size: 1,5rem;
+    /* TODO: Add margin-bottom (1rem) */
+    margin-bottom: 1rem;
+}
+
+.card-content p {
+    /* TODO: Set color to dark gray */
+    color: darkred;
+    /* TODO: Add margin-bottom (1.5rem) */
+    margin-bottom: 1.5rem;
+    /* TODO: Set line-height (1.6) */
+    line-height: 1.6;
+}
+
+/* ==================== MEDIA QUERIES ==================== */
+/* TODO: Add responsive breakpoints */
+
+/* ========== TABLET (768px and up) ========== */
+@media screen and (min-width: 768px) {
+    
+    /* TODO: Change cards grid to 2 columns */
+    .cards-grid { grid-template-columns: repeat(2, 1fr);
+        
+    }
+    
+    /* TODO: Change footer grid to 2 columns */
+    .footer-grid { grid-template-columns: repeat(2, 1fr);
+        
+    }
+    
+    /* TODO: Adjust hero content font sizes if needed */
+    .hero-content h1 {
+        font-size: 3.5rem;
+
+    }
+}
+
+/* ========== DESKTOP (1024px and up) ========== */
+@media screen and (min-width: 1024px) {
+    
+    /* TODO: Change cards grid to 3 columns */
+    .cards-grid { grid-template-columns: repeat(3, 1fr);
+        
+    }
+    
+    /* TODO: Change footer grid to 4 columns */
+    .footer-grid { grid-template-columns: repeat(2, 1fr);
+        
+    }
+    
+    /* TODO: Increase hero heading size */
+    .hero-content h1 {
+        font-size: 4rem;
+    }
+    .hero-content p {
+        font-size: 1.5rem;
+    }
+}
