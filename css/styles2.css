@@ -369,4 +369,116 @@ ul {
     .hero-content p {
         font-size: 1.5rem;
     }
+
+    /* ==================== FOOTER STYLES ==================== */
+/* TODO: Style the footer using CSS Grid */
+
+.footer {
+    /* TODO: Set background to primary blue */
+    background-color: green;
+    /* TODO: Set color to white */
+    color: white;
+    /* TODO: Add padding (3rem 0) */
+    padding: 3rem 0;
+    /* TODO: Add margin-top (2rem) */
+    margin-top: 2rem;
+}
+
+/* ==================== FOOTER GRID ==================== */
+/* TODO: Create responsive grid for footer sections */
+
+.footer-grid {
+    /* TODO: Use CSS Grid */
+    display: grid;
+    /* TODO: Start with 1 column for mobile */
+    grid-template-columns: 1fr;
+    /* TODO: Add gap (2rem) */
+    gap: 2rem;
+}
+
+.footer-section h3 {
+    /* TODO: Set color to accent gold */
+    color: red;
+    /* TODO: Add margin-bottom (1rem) */
+    margin-bottom: 1rem;
+    /* TODO: Set font-size (1.2rem) */
+    font-size: 1.2 rem;
+}
+
+/* ==================== FOOTER NAVIGATION ==================== */
+/* TODO: Style footer navigation links */
+
+.footer-nav ul {
+    /* TODO: Remove default list styling (already done in reset) */
+}
+
+.footer-nav li {
+    /* TODO: Add margin-bottom (0.5rem) */
+    margin-bottom: 0.5rem;
+}
+
+.footer-nav a {
+    /* TODO: Set color to white */
+    color: white;
+    /* TODO: Add transition (0.3s) */
+    transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+    /* TODO: Change color on hover to accent gold */
+    color: var(--accent-gold);
+}
+
+/* ==================== FOOTER COPYRIGHT & DISCLAIMER ==================== */
+/* TODO: These sections can use default styling or customize as desired */
+
+.footer-copyright p,
+.footer-disclaimer p {
+    /* TODO: Set font-size (0.9rem) */
+    font-size: 0.9rem;
+    /* TODO: Set line-height (1.6) */
+    line-height: 1.6;
+    margin-bottom: 0.5;
+}
+
+    /* ==================== FOOTER CONTACT FORM ==================== */
+/* TODO: Style the contact form */
+
+.footer-contact form {
+    /* TODO: Use Flexbox or Grid for layout */
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-contact label {
+    /* TODO: Display as block */
+    display: block;
+    /* TODO: Add margin-bottom (0.5rem) */
+    margin-bottom: 0.5rem;
+    /* TODO: Make font-weight bold */
+    font-weight: bold;
+}
+
+.footer-contact input,
+.footer-contact textarea {
+    /* TODO: Set width to 100% */
+    width: 100%;
+    /* TODO: Add padding (10px) */
+    padding: 10px;
+    /* TODO: Add margin-bottom (1rem) */
+    margin-bottom: 1rem;
+    /* TODO: Set border (1px solid #ddd) */
+    border: 1px solid #777;
+    /* TODO: Set border-radius (5px) */
+    border-radius: 5px;
+    /* TODO: Set font-family to inherit */
+    font-family: inherit;
+}
+
+.footer-contact textarea {
+    /* TODO: Set min-height (100px) */
+    min-height: 100px;
+    /* TODO: Allow vertical resize only */
+    resize: vertical;
+}
 }
